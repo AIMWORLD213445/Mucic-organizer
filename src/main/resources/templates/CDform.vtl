@@ -1,0 +1,17 @@
+<p>Add a new album to $artist.getName():</p>
+
+<form action="/cds" method="post">
+  <input id="artistId" name="artistId" type="hidden" value="$artist.getId()">
+
+  <br><label for="album">Album Name</label>
+  <input id="album" name="album" type="text">
+  <br><label for="year">Album Year</label>
+  <input id="year" name="year" type="text">
+  <br><label for="description">Album Description</label>
+  <input id="description" name="description" type="text">
+
+  <button type="submit" class="btn btn-default">Add Album</button>
+</form>
+
+
+<a href="/albums">See Your Collection</a>

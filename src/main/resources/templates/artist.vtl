@@ -1,0 +1,12 @@
+<h1>$artist.getName()</h1>
+
+<ul>
+  #foreach($cd in $artist.getCds())
+    <li>$cd.getAlbum()</li>
+    <li>$cd.getDescription()</li>
+    <li>$cd.getYear()</li>
+  #end
+</ul>
+
+<a href="/artists/$artist.getId()/cds/new">Add a new album</a>
+<a href="/artists">All Artists</a>
